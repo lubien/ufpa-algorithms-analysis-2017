@@ -80,7 +80,7 @@ exports.quickSort = function quickSort(xs) {
     }
   }
 
-  return quicksort(low).concat(mid).concat(quicksort(high))
+  return quickSort(low).concat(mid).concat(quickSort(high))
 }
 
 exports.mergeSort = function mergeSort(xs) {
@@ -187,6 +187,7 @@ exports.countingSort = function countingSort(xs) {
 
 exports.bucketSort = function bucketSort(xs) {
   const highest = xs.reduce((a, b) => Math.max(a, b))
+  console.log({xs, highest});
   let buckets = Array(highest + 1).fill([])
 
   for (let item of xs) {
