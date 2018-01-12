@@ -4,6 +4,8 @@
     "run": "node bench.js"
   },
   "dependencies": {
-    "commander": "^2.13.0"
+    "commander": "^2.13.0",
+    "execa": "^0.8.0",
+    "p-series": "^1.0.0"
   }
 }
