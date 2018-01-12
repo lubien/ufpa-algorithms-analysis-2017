@@ -1,14 +1,11 @@
 {
-  "name": "webpack-simple-starter",
-  "version": "1.0.0",
-  "description": "A simple webpack starter without framework (Like Vue, React, Angular, etc.)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "npm run build:json && npm run build:front",
+    "build:json": "node bench-all.js -s",
+    "build:front": "node build/build.js",
+    "deploy": "gh-pages -d dist"
   },
-  "author": "Sinan Mutlu <sinanm17@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
@@ -36,6 +33,7 @@
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "http-proxy-middleware": "^0.17.4",
     "node-sass": "^4.6.1",

@@ -7,6 +7,7 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 .vscode/
+static/chart.json
 
 # Editor directories and files
 .idea

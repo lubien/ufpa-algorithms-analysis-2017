@@ -12,7 +12,7 @@ import Highcharts from 'highcharts'
 import Exporting from 'highcharts/modules/exporting'
 Exporting(Highcharts)
 
-axios.get('/static/chart.json')
+axios.get('static/chart.json')
   .then(({data}) => {
     Highcharts.chart('chart-container', data)
   })
