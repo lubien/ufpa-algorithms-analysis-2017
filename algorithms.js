@@ -187,7 +187,6 @@ exports.countingSort = function countingSort(xs) {
 
 exports.bucketSort = function bucketSort(xs) {
   const highest = xs.reduce((a, b) => Math.max(a, b))
-  console.log({xs, highest});
   let buckets = Array(highest + 1).fill([])
 
   for (let item of xs) {
