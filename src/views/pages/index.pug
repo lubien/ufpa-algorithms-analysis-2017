@@ -1,0 +1,17 @@
+extends ../layouts/pages
+block append head
+  block title
+    - var title='Sorting Algorithms';
+
+block content
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        main#chart-container.inner.cover(role='main') &nbsp;
+
+        footer.mastfoot
+          .inner
+            p
+              | Source at 
+              a(href='#', target="_blank") GitHub
+              | .
