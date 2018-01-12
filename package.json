@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "npm run build:json && npm run build:front",
-    "build:json": "node bench-all.js -s",
+    "build:json": "rm dist/static/chart.json && node bench-all.js -s",
     "build:front": "node build/build.js",
     "deploy": "gh-pages -d dist"
   },

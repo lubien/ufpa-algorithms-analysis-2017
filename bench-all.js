@@ -66,7 +66,8 @@ function meanTests(tests) {
 function toHighchart(data) {
   return {
     chart: {
-      type: 'line'
+      type: 'line',
+      zoomType: 'xy',
     },
 
     title: { text: 'Sorting Algorithms' },
