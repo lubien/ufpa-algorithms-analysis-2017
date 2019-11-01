@@ -4,6 +4,12 @@
 
 Code from my Algorithms Analysis class at UFPA with @filipesaraiva 
 
+## Project Setup
+
+```sh
+npm install
+```
+
 ## Running benchmarks
 
 There are input files in the `input` folder.
